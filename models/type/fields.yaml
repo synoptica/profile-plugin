@@ -1,0 +1,21 @@
+fields:
+    name:
+        label: Name
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    code:
+        label: Code
+        span: auto
+        type: text
+    is_enabled:
+        label: Enabled
+        span: right
+        default: 1
+        type: switch

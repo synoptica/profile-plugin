@@ -1,0 +1,105 @@
+fields:
+    user:
+        label: User
+        nameFrom: 'CONCAT(''firstname'', '' '', ''lastname)'
+        descriptionFrom: description
+        span: full
+        type: relation
+    type:
+        label: Type
+        nameFrom: name
+        descriptionFrom: description
+        span: full
+        type: relation
+    ceo:
+        label: CEO
+        nameFrom: 'CONCAT(''firstname'', '' '', ''lastname)'
+        descriptionFrom: description
+        span: full
+        type: relation
+tabs:
+    fields:
+        firstname:
+            label: Firstname
+            span: auto
+            type: text
+            tab: Profile
+        lastname:
+            label: Lastname
+            span: auto
+            type: text
+            tab: Profile
+        company_name:
+            label: 'Company Name'
+            span: full
+            type: text
+            tab: Profile
+        vat:
+            label: VAT
+            span: auto
+            type: text
+            tab: Profile
+        cf:
+            label: CF
+            span: auto
+            type: text
+            tab: Profile
+        email:
+            label: E-Mail
+            span: full
+            type: text
+            tab: Profile
+        address:
+            label: Address
+            span: full
+            type: text
+            tab: Address
+        city:
+            label: City
+            span: auto
+            type: text
+            tab: Address
+        zip:
+            label: ZIP
+            span: auto
+            type: text
+            tab: Address
+        prov:
+            label: Province
+            span: auto
+            type: text
+            tab: Address
+        country:
+            label: Country
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: Address
+        phone:
+            label: Phone
+            span: auto
+            type: text
+            tab: Address
+        fax:
+            label: Fax
+            span: auto
+            type: text
+            tab: Address
+        ip_reg:
+            label: 'IP Address'
+            span: auto
+            type: text
+            tab: Etc
+        created_at:
+            label: 'Creation Date'
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: Etc
+        updated_at:
+            label: 'Updated At'
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: Etc

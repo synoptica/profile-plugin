@@ -1,0 +1,10 @@
+name: Types
+form: $/synoptica/profile/models/type/fields.yaml
+modelClass: Synoptica\Profile\Models\Type
+defaultRedirect: synoptica/profile/types
+create:
+    redirect: 'synoptica/profile/types/update/:id'
+    redirectClose: synoptica/profile/types
+update:
+    redirect: synoptica/profile/types
+    redirectClose: synoptica/profile/types

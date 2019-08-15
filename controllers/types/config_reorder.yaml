@@ -1,0 +1,4 @@
+title: Types
+modelClass: Synoptica\Profile\Models\Type
+toolbar:
+    buttons: reorder_toolbar

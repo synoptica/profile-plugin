@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: ID
+        type: number
+        sortable: true
+    lastname:
+        label: Lastname
+        type: text
+        searchable: true
+        sortable: true
+    firstname:
+        label: Firstname
+        type: text
+    company_name:
+        label: Company
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Created At'
+        type: datetime
+        sortable: true

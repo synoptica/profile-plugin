@@ -1,0 +1,6 @@
+plugin:
+    name: 'synoptica.profile::lang.plugin.name'
+    description: 'synoptica.profile::lang.plugin.description'
+    author: Synoptica
+    icon: oc-icon-users
+    homepage: ''

@@ -1,0 +1,10 @@
+name: Profiles
+form: $/synoptica/profile/models/profile/fields.yaml
+modelClass: Synoptica\Profile\Models\Profile
+defaultRedirect: synoptica/profile/profiles
+create:
+    redirect: 'synoptica/profile/profiles/update/:id'
+    redirectClose: synoptica/profile/profiles
+update:
+    redirect: synoptica/profile/profiles
+    redirectClose: synoptica/profile/profiles
