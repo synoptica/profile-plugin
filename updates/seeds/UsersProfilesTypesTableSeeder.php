@@ -201,7 +201,7 @@ class UsersProfileTypeTableSeeder extends Seeder
             ),
             13 => 
             array (
-                'id' => 13,
+                'id' => 14,
                 'name' => 'Soggetto 71ter',
                 'slug' => '71ter',
                 'code' => '71TER',
