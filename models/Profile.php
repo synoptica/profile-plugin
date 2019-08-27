@@ -22,12 +22,12 @@ class Profile extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'users_profiles';
+    public $table = 'synoptica_profile_profiles';
 
     public $belongsTo = [
         'type' => 'Synoptica\Profile\Models\Type',
         'user' => 'Synoptica\Profile\Models\User',
-        'country' => 'Synoptica\Core\Models\Country'
+        'country' => 'Synoptica\Profile\Models\Country'
     ];
 
     public $hasOne = [

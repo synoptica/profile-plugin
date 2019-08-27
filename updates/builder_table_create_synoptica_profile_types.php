@@ -3,11 +3,11 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateSynopticaProfileType extends Migration
+class BuilderTableCreateSynopticaProfileTypes extends Migration
 {
     public function up()
     {
-        Schema::create('users_profiles_types', function($table)
+        Schema::create('synoptica_profile_types', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -26,6 +26,6 @@ class BuilderTableCreateSynopticaProfileType extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('users_profiles_types');
+        Schema::dropIfExists('synoptica_profile_types');
     }
 }

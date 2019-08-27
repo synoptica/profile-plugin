@@ -20,10 +20,6 @@ class Plugin extends PluginBase
 
     public function registerComponents()
     {
-        return [
-            StripeElementsForm::class => 'stripeElementsForm',
-            NeedsSubscription::class  => 'needsSubscription',
-        ];
     }
 
     public function registerSettings()
@@ -32,6 +28,7 @@ class Plugin extends PluginBase
     
     public function register()
     {
+        $this->registerConsoleCommand('Synoptica.Profile:Sync', 'Synoptica\Profile\Console\Sync');
     }
 
     public function registerPermissions()

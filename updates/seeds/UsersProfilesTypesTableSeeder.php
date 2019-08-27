@@ -14,9 +14,9 @@ class UsersProfileTypeTableSeeder extends Seeder
     {
         
 
-        \DB::table('users_profiles_types')->delete();
+        \DB::table('synoptica_profile_types')->delete();
         
-        \DB::table('users_profiles_types')->insert(array (
+        \DB::table('synoptica_profile_types')->insert(array (
             0 => 
             array (
                 'id' => 1,

@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Type extends Model
+class Country extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -28,16 +28,27 @@ class Type extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'synoptica_profile_types';
-    
-    protected $jsonable = ['configs'];
-    
+    public $table = 'synoptica_profile_countries';
+
     public $hasMany = [
         'profiles' => 'Synoptica\Profile\Models\Profile',
     ];
 
-    public function scopeEnabled($query)
-    {
-        return $query->where('is_enabled', 1);
+    protected $legacy = 
+    [
+        'country_aruba_id' => 'aruba_id',
+        'country_name' => 'name',
+        'country_name_i18n' => 'name_it',
+        'country_enabled' => 'is_enabled',
+        'country_code' => 'code',
+    ];
+
+    public function ingest($object){
+
+        foreach ($this->legacy as $old => $new){
+            if ($new && isset($object->$old) && $object->$old != '0000-00-00 00:00:00') {
+                $this->$new = $object->$old;
+            }
+        }
     }
 }

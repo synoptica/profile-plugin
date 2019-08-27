@@ -2,10 +2,11 @@
     - 'Initialize plugin.'
 1.0.2:
     - 'Created table users_profiles_types'
-    - builder_table_create_users_profiles_types.php
+    - builder_table_create_synoptica_profile_types.php
+    - builder_table_create_synoptica_profile_countries.php
 1.0.3:
     - 'Created table users_profiles'
-    - builder_table_create_users_profiles.php
+    - builder_table_create_synoptica_profile_profiles.php
 1.0.4:
     - 'Update table Users with profile ID'
     - update_users_table_profile.php
